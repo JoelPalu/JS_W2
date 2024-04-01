@@ -1,0 +1,24 @@
+body {
+  /* Default color palette for week exercises */
+  --pearl: #e6e1c5ff;
+  --sage: #d4cb92ff;
+  --space-cadet: #34344aff;
+  --quinacridone-magenta: #80475eff;
+  --blush: #cc5a71ff;
+}
+
+table {
+  background-color: var(--sage);
+  border-collapse: collapse;
+  width: auto;
+}
+
+th, td {
+  width: 2rem;
+  padding: 0.5rem;
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--pearl);
+}
+

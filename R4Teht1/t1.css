@@ -1,0 +1,93 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20rem;
+}
+
+li {
+  border: 1px solid #000;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 3rem;
+}
+
+label {
+  display: block;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+li button {
+
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+li input {
+  position: absolute;
+  margin: 1rem 5rem;
+  cursor: pointer;
+}
+
+li input[type='checkbox']:checked + label {
+  background-color: rgb(146, 208, 136);
+  font-weight: bold;
+}
+
+.add-btn {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: rgb(80, 80, 168);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn {
+  padding: 0.1rem;
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #b2b2b2;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 0.5rem;
+  width: 40%; /* Could be more or less, depending on screen size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.close {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 1% auto;
+  padding-right: 40%;
+  padding-top: 10%;
+}
+
